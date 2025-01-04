@@ -12,13 +12,18 @@
   font-weight: 400;
   font-style: normal;
 }
+.main {
+  background: url(background.png);
+  background-repeat: no-repeat;
 
+  
+}
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
-  padding: 0 12px 0 12px;
+  padding: 20px 20px 20px 20px;
 }
 header h1{
   font-size: 18px;
@@ -38,13 +43,17 @@ header h1{
 
 .headline {
   font-size: 35px;
-  padding: 0 12px 0 12px;
-  line-height: 60px;
+  padding: 0 20px 0 20px;
+  line-height: 52px;
   color: #172B4D;
+  
+}
+.headline h1{
+  padding: 100px 0 0 0;
 }
 .headline p{
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 24px;
   color: #344563;
   margin: 10px 0 10px 0;
 }
@@ -55,5 +64,11 @@ header h1{
 }
 .social-links{
   color: #505F79;
-  ;
+  font-size: 20px;
+}
+  
+
+.social-links i:not(:last-child) {
+  margin-right: 10px;
+  
 }
