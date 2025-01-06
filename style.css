@@ -12,12 +12,6 @@
   font-weight: 400;
   font-style: normal;
 }
-.main {
-  background: url(background.png);
-  background-repeat: no-repeat;
-
-  
-}
 header{
   display: flex;
   justify-content: space-between;
@@ -46,7 +40,6 @@ header h1{
   padding: 0 20px 0 20px;
   line-height: 52px;
   color: #172B4D;
-  
 }
 .headline h1{
   padding: 100px 0 0 0;
@@ -66,9 +59,27 @@ header h1{
   color: #505F79;
   font-size: 20px;
 }
-  
+.social-links a {
+  color: inherit; /* Keep the same color as the icon */
+  text-decoration: none; /* Remove underline from links */
+}
+.social-links a:hover {
+  color: #6070FF;
+
+}
 
 .social-links i:not(:last-child) {
   margin-right: 10px;
   
+}
+.main {
+  background-image: url('background.png'); /* Add the path to your image */
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
 }
