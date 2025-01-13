@@ -84,7 +84,7 @@ header h1{
 }
 
 
-.headline h1{
+.headline h2{
   padding: 100px 0 0 0;
 }
 
@@ -97,7 +97,7 @@ header h1{
 }
 
 
-.headline h2{
+.headline h3{
   font-size: 16px;
   line-height: 24px;
   color: #6070FF;
@@ -159,7 +159,7 @@ header h1{
 }
   
 
-.project-Container #first-h1 {
+.project-Container .first-h1 {
   width: 295px;
   height: 36px;
   color: #172B4D;
@@ -169,7 +169,7 @@ header h1{
 }
 
 
-#second-h1 {
+.second-h1 {
   width: 295px;
   height: 80px;
   color: #172B4D;
@@ -190,7 +190,7 @@ header h1{
 }
 
 
-#para {
+.para {
   padding: 12px 0 0 0;
   width: 295px;
   /* height: 76px; */
@@ -200,7 +200,7 @@ header h1{
 }
 
 /* Tags */
-#card-tags {
+.card-tags {
   padding: 12px 0 24px 0;
   /* margin: 8px 0; */
 }
@@ -227,7 +227,7 @@ header h1{
 }
 
 
-.container #company-name {
+.container .company-name {
   width: 55px;
   height: 16px;
   font-size: 13px;
@@ -237,7 +237,7 @@ header h1{
 }
 
 
-.container #role {
+.container .role {
   width: 89px;
   height: 32px;
   height: 16px;
@@ -247,7 +247,7 @@ header h1{
 }
 
 
-.container #year{
+.container .year{
   width: 29px;
   height: 16px;
   font-size: 13px;
@@ -266,7 +266,7 @@ header h1{
 
 
 /* Button */
-.project-Container #card-button {
+.project-Container .card-button {
   /* width: 126px; */
   /* height: 48px; */
   display: inline-block;
@@ -306,7 +306,7 @@ header h1{
 }
 
 
-.bio h1{
+.bio h2{
   font-size: 40px;
   /* padding: 100px 0 0 0; */
 }
@@ -355,7 +355,7 @@ header h1{
   /* padding: 20px; */
 }
 
-.bio #lang{
+.bio .lang{
   width: 275px;
   height: 24px;
   font-size: 20px;
@@ -366,7 +366,7 @@ header h1{
 }
 
 
-#angel{
+.angel{
   color: #ACB7C3;
   border: 2px;
   gap: 24px;
