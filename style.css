@@ -31,7 +31,7 @@
 
 
 body {
-  width: 375px;
+  /* width: 375px; */
 }
 
 
@@ -424,11 +424,11 @@ header h1{
 /* Contact-me container goes here */
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* justify-content: center; */
   background-color: #6070FF;
-  width: 375px;
+  /* width: 375px; */
   padding: 24px 0 12px 0;
   border-radius: 70px 0 0 0;
 }
