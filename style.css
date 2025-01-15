@@ -31,13 +31,12 @@
 
 
 body {
-  background-color: #F7F7F9;
-  /* width: 375px; */
+  width: 375px;
 }
 
 
 header{
-  /* width: 375px; */
+  width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +73,7 @@ header h1{
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  /* width: 375px; */
+  width: 375px;
   background-color: white;
   border-radius: 0 0 0 50px;
   height: 700px;
@@ -296,7 +295,7 @@ header h1{
   line-height: 52px;
   color: #172B4D;
   background-repeat: no-repeat;
-  /* width: 375px; */
+  width: 375px;
   background-color: white;
   border-radius: 0 50px 0 0 ;
   /* height: 1062px; */
@@ -422,3 +421,98 @@ header h1{
   margin-bottom: 0;
 }
 
+/* Contact-me container goes here */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: #6070FF;
+  width: 375px;
+  padding: 24px 0 12px 0;
+  border-radius: 70px 0 0 0;
+}
+
+
+.contact-container {
+  background-image: url('background-2.png');
+  background-size: 220px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  /* height: 709px; */
+}
+
+
+.contact-me {
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #ffffff;
+  padding: 85px 24px 0 24px;
+}
+
+
+.contact-description {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  padding: 24px;
+}
+
+
+.form { text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center; 
+   padding: 24px; 
+  } 
+
+  
+form input, form textarea { 
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #CFD8DC; 
+  border-radius: 8px; 
+  width: 300px; 
+  /* height: 48px; */ 
+  font-size: 17px; 
+  line-height: 20px; 
+  color: #172B4D; }
+
+
+form textarea {
+  resize: none;
+  height: 150px;
+  color: #B3BAC5;
+}
+
+
+form button {
+  background-color: #ffffff;
+  color: #6070FF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 142px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+form button:hover {
+  background-color: #e0e0e0;
+}
+
+
+.center-line {
+  width: 134px;
+  height: 5px;
+  background-color: black;
+  margin: 21px 120px 0 120px;
+  border-radius: 10px;
+}
