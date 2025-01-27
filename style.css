@@ -42,13 +42,11 @@ header{
   background-color: white;
 }
 
-
 header h1{
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: #6070FF;
-
 }
 
 header h2{
@@ -57,13 +55,12 @@ header h2{
   line-height: 20px;
   color: #6070FF;
   margin-left: 143px;
-
 }
 
 .nav-disk {
   margin-right: 143px;
- 
 }
+
 .nav-disk a {
   font-size: 15px;
   line-height: 20px;
@@ -71,7 +68,6 @@ header h2{
   color: #344563;
   text-decoration: none;
   padding-right: 20px;
-
 }
 
 .fa-bars {
@@ -81,7 +77,6 @@ header h2{
   left: 3px;
   color: #6070FF; 
 }
-
 
 .headline {
   font-size: 35px;
@@ -100,11 +95,9 @@ header h2{
   margin-bottom: 125px;
 }
 
-
 .headline h2{
   padding-top: 100px;
 }
-
 
 .headline p{
   font-size: 16px;
@@ -113,37 +106,29 @@ header h2{
   margin: 10px 0;
 }
 
-
 .headline h3{
   font-size: 16px;
   line-height: 24px;
   color: #6070FF;
 }
 
-
 .social-links{
   color: #505F79;
   font-size: 20px;
 }
-
 
 .social-links a {
   color: inherit; 
   text-decoration: none; 
 }
 
-
 .social-links a:hover {
   color: #6070FF;
-
 }
-
 
 .social-links > * {
-  margin: 8px;
-  
+  margin: 8px; 
 }
-
 
 /* Project Container goes here */
 
@@ -156,13 +141,11 @@ header h2{
   gap: 88px;
 }
 
-
 .project-1{
   background-color: white;
   padding: 15px;
   border-radius: 16px;
 }
-
 
 .image {
   border-radius: 10px;
@@ -170,7 +153,6 @@ header h2{
   height: 220px;
 }
   
-
 .project-Container .first-h1 {
   width: 295px;
   height: 36px;
@@ -179,7 +161,6 @@ header h2{
   line-height: 44px;
   padding: 12px 0 0 0;
 }
-
 
 .second-h1 {
   width: 295px;
@@ -190,7 +171,6 @@ header h2{
   padding: 12px 0 0 0;
 }
 
-
 .card-meta{
   padding: 0 0 12px 0;
   width: 295px;
@@ -200,7 +180,6 @@ header h2{
   color: #344563;
   /* gap: 12px; */
 }
-
 
 .para {
   padding: 12px 0 0 0;
@@ -460,11 +439,12 @@ header h2{
 }
 
 
-.form { text-align: center;
+.form { 
+   align-items: center;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center; 
-   padding: 24px; 
+   padding: 50px; 
   } 
 
   
@@ -473,7 +453,7 @@ form input, form textarea {
   margin-bottom: 15px; 
   border: 1px solid #CFD8DC; 
   border-radius: 8px; 
-  width: 300px; 
+  width: 95%; 
   font-size: 17px; 
   line-height: 20px; 
   color: #172B4D; }
@@ -506,7 +486,6 @@ form button:hover {
   background-color: #e0e0e0;
 }
 
-
 .center-line {
   width: 134px;
   height: 5px;
@@ -514,7 +493,6 @@ form button:hover {
   margin: 21px 120px 0 120px;
   border-radius: 10px;
 }
-
 
 /* desktop version goes here  */
 
@@ -526,11 +504,7 @@ form button:hover {
   background-color: white;
   background-position: center;
   border-radius: 0 0 0 100px;
-
-
-
 }
-
 
  .headline-disk {
   display: flex;
@@ -538,7 +512,6 @@ form button:hover {
   flex-direction: column;
   letter-spacing: 0.37px;
   padding: 289px 260px 289px 240px; 
-
  } 
 
  .headline-section-disk h2 {
@@ -573,13 +546,11 @@ form button:hover {
 
 .social-links-disk a:hover {
   color: #6070FF;
-
 }
 
 
 .social-links-disk > * {
-  margin: 8px;
-  
+  margin: 8px; 
 }
 
 /* project container disk  */
@@ -590,7 +561,6 @@ form button:hover {
   grid-template-rows: auto auto auto auto ;
   padding: 142px;
   gap: 142px;
-
 }
 
 .project-1-disk {
@@ -599,7 +569,6 @@ form button:hover {
   padding: 24px;
   gap: 24px;
   border-radius: 24px;
-
 }
 
 .left-container-disk {
@@ -607,7 +576,6 @@ form button:hover {
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-
 }
 
 .right-container-disk {
@@ -626,20 +594,17 @@ form button:hover {
   line-height: 52px;
 }
 
-
 .container-disk {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-
 .company-name-disk {
   font-size: 18px;
   line-height: 24px;
   color: #344563;
 }
-
 
 .role-disk {
   font-size: 18px;
@@ -735,7 +700,6 @@ form button:hover {
     border-radius: 0 100px 0 0 ;
     gap:48px;
     height: 80vh;
-
   }
 
 .left-section-bio-disk{
@@ -744,7 +708,6 @@ form button:hover {
   top: 160px;
   width: 447px;
   gap: 24px;
-
 }
 
 .left-section-bio-disk h2{
@@ -752,13 +715,11 @@ form button:hover {
   font-size: 40px;
 }
 
-
 .left-section-bio-disk p{
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
-
 
 .left-section-bio-disk #connect{
   font-size: 16px;
@@ -786,8 +747,6 @@ form button:hover {
   margin: 30px 0;
 }
 
-
-
 .right-section-bio-disk {
   width: 684px;
   position: relative;
@@ -795,32 +754,30 @@ form button:hover {
   left: 140px;
 }
 
-
 .bio-disk .lang-disk{
   height: 24px;
   font-size: 20px;
   line-height: 24px;
   color: #344563;
   gap: 24px;
-  width: 582px;
+  width: 450px;
   display: inline-block;
   padding: 24px;
 }
-
-
+ .disk{
+  width: 550px;
+ }
 .angel-disk{
   color: #ACB7C3;
   border: 2px;
   gap: 24px;
 }
 
-
 .skill-list-disk {
   display: flex;
   gap: 12px;
   padding: 12px;
 }
-
 
 .skill-item-disk {
   height: 120px;
@@ -832,11 +789,9 @@ form button:hover {
   transition: background-color 0.3s ease;
 }
 
-
 .skill-item-disk:hover {
   background-color: #f0f0f0;
 }
-
 
 .skill-icon-disk {
   width: 48px;
@@ -845,7 +800,6 @@ form button:hover {
   align-items: center;
   justify-content: center;
 }
-
 
 .skill-icon-disk img {
   max-width: 100%;
@@ -858,7 +812,6 @@ form button:hover {
 .skill-section-disk:last-child {
   margin-bottom: 0;
 }
-
 
 
 /* Contact-me container goes here */
@@ -942,21 +895,12 @@ form button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 160px;
 }
-
 
 .form-disk button:hover {
   background-color: #e0e0e0;
 }
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 768px) {
@@ -965,9 +909,91 @@ form button:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .my-logo-disk, .nav-disk, .headline-section-disk, .project-Container-disk, .bio-disk, .contact-section-disk{
     display: none;
   }
   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .headline-disk{
+    padding: 100px;
+    height: none;
+  }
+  .project-Container-disk {
+    padding: 72px;
+    gap: 72px;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  }
+
+  .project-1-disk {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .left-container-disk,
+  .right-container-disk {
+    padding: 16px;
+  }
+
+  .first-h1-disk,
+  .second-h1-disk {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .company-name-disk,
+  .role-disk,
+  .year-disk {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .bio-disk {
+    flex-direction: column;
+    height: auto;
+    padding: 100px;
+  }
+
+  .bio-disk .lang-disk{
+    width: 450px;
+  }
+
+  .left-section-bio-disk {
+    width: auto;
+    left: 0;
+    top: 0;
+    padding: 16px;
+  }
+
+  .right-section-bio-disk {
+    width: auto;
+    left: 0;
+    top: 0;
+    padding: 16px;
+  }
+
+  .skill-item-disk {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-container-body-disk {
+    padding: 16px;
+  }
+
+  .contact-description-disk {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .form-disk input,
+  .form-disk textarea {
+    margin-bottom: 12px;
+  }
 }
