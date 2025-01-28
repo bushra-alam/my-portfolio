@@ -500,7 +500,8 @@ form button:hover {
   background-image: url('background-disk.png');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100%;
+  width: 100%;
   background-color: white;
   background-position: center;
   border-radius: 0 0 0 100px;
@@ -511,7 +512,7 @@ form button:hover {
   gap: 12px;
   flex-direction: column;
   letter-spacing: 0.37px;
-  padding: 289px 260px 289px 240px; 
+  padding: 17vw; 
  } 
 
  .headline-section-disk h2 {
@@ -687,8 +688,8 @@ form button:hover {
 .hand-cursor {
   width: 57px;
   position: relative;
-  left: 350px;
-  bottom: 80px;
+  left: 21vw;
+  bottom: 7vw;
 }
 
 /* bio disk container */
@@ -699,7 +700,7 @@ form button:hover {
     background-color: white;
     border-radius: 0 100px 0 0 ;
     gap:48px;
-    height: 80vh;
+    padding-bottom: 30vh;
   }
 
 .left-section-bio-disk{
@@ -760,7 +761,7 @@ form button:hover {
   line-height: 24px;
   color: #344563;
   gap: 24px;
-  width: 450px;
+  width: 27vw;
   display: inline-block;
   padding: 24px;
 }
@@ -917,15 +918,9 @@ form button:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .headline-disk{
-    padding: 100px;
-    height: none;
-  }
   .project-Container-disk {
     padding: 72px;
     gap: 72px;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   }
 
   .project-1-disk {
@@ -959,7 +954,11 @@ form button:hover {
   }
 
   .bio-disk .lang-disk{
-    width: 450px;
+    width: 40vw;
+  }
+
+  .hand-cursor{
+    display: none;
   }
 
   .left-section-bio-disk {
@@ -996,4 +995,8 @@ form button:hover {
   .form-disk textarea {
     margin-bottom: 12px;
   }
+}
+
+html, body {
+  width: 100%;
 }
