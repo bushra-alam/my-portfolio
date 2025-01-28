@@ -560,8 +560,9 @@ form button:hover {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto ;
-  padding: 142px;
+  padding: 10vw;
   gap: 142px;
+  justify-content: center;
 }
 
 .project-1-disk {
@@ -999,4 +1000,5 @@ form button:hover {
 
 html, body {
   width: 100%;
+  overflow-x: hidden;
 }
