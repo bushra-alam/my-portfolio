@@ -174,17 +174,14 @@ header h2{
 .card-meta{
   padding: 0 0 12px 0;
   width: 295px;
-  /* height: 32px; */
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  /* gap: 12px; */
 }
 
 .para {
   padding: 12px 0 0 0;
   width: 295px;
-  /* height: 76px; */
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -193,7 +190,6 @@ header h2{
 /* Tags */
 .card-tags {
   padding: 12px 0 24px 0;
-  /* margin: 8px 0; */
 }
 
 
@@ -535,7 +531,7 @@ form button:hover {
 
  .social-links-disk{
   color: #505F79;
-  font-size: 20px;
+  font-size: 1.3vw;
 }
 
 
@@ -561,23 +557,28 @@ form button:hover {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto ;
   padding: 10vw;
-  gap: 142px;
+  gap: 10vw;
   justify-content: center;
 }
 
 .project-1-disk {
   display: flex;
   background-color: white;
-  padding: 24px;
-  gap: 24px;
-  border-radius: 24px;
+  padding: 1.7vw;
+  gap: 1.7vw;
+  border-radius: 1.7vw;
+}
+
+.project-1-disk .card-image{
+  width: 38vw;
 }
 
 .left-container-disk {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 24px;
+  gap: 1.7vw;
+  padding: 1.7vw;
+
 }
 
 .right-container-disk {
@@ -586,37 +587,37 @@ form button:hover {
 
 .first-h1-disk {
   color: #172B4D;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.8vw;
+  line-height: 3vw;
 }
 
 .second-h1-disk {
   color: #172B4D;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.8vw;
+  line-height: 3vw;
 }
 
 .container-disk {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1vw;
 }
 
 .company-name-disk {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
   color: #344563;
 }
 
 .role-disk {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
   color: #7A869A;
 }
 
 .year-disk{
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
   color: #7A869A; 
 }
 
@@ -629,68 +630,70 @@ form button:hover {
 }
 
 .paragraph-disk {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.07vw;
+  line-height: 1.7vw;
   color: #344563;
 }
 
 /* Tags */
 
 .tag-disk {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1.2vw;
   display: inline-block;
   background-color: #EBEBFF;
   color: #6070FF;
   padding: 4px 8px;
   border-radius: 4px;
-  margin-right: 4px;
+  margin-right: 0.5vw;
 }
 
 /* Button */
 .project-Container-disk .card-button-disk {
-  width: 126px;
-  display: inline-block;
-  text-align: center;
-  padding: 12px;
-  color: #396Df3;
-  background-color: white;
-  border: 1px solid #396Df3;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 17px;
-  line-height: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 18px 0;
+    width: 7.1vw;
+    display: inline-block;
+    text-align: center;
+    padding: 1vw;
+    color: #396Df3;
+    background-color: white;
+    border: 1px solid #396Df3;
+    border-radius: 0.7vw;
+    text-decoration: none;
+    font-size: 1.22vw;
+    line-height: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1.3vw 0;
 }
 
 .project-Container-disk .card-button-disk-last {
-  width: 126px;
+  width: 7.1vw;
   display: inline-block;
   text-align: center;
-  padding: 12px;
+  padding: 1vw; 
   color: white;
   background-color: #396Df3;
   border: 1px solid #396Df3;
-  border-radius: 8px;
+  border-radius: 0.7vw;
   text-decoration: none;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.22vw;
+  line-height: 1.5vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 18px 0;
+  margin: 1.3vw 0;
 }
 
 .card-button-disk:hover {
   background-color: #2563eb;
 }
 
-.hand-cursor {
-  width: 57px;
+.fa-hand-pointer {
+  font-size: 5vw;
   position: relative;
-  left: 21vw;
-  bottom: 7vw;
+  left: 24vw;
+  bottom: 6vw;
+  transform: rotate(-40.56deg);
+  transform-origin: left;
 }
 
 /* bio disk container */
@@ -701,75 +704,67 @@ form button:hover {
     background-color: white;
     border-radius: 0 100px 0 0 ;
     gap:48px;
-    padding-bottom: 30vh;
+    align-items: center;
+    justify-content: center;
+    padding: 10vw 3vw 15vw;
   }
 
 .left-section-bio-disk{
-  position: relative;
-  left: 143px;
-  top: 160px;
-  width: 447px;
-  gap: 24px;
+  width: 32.5vw;
 }
 
 .left-section-bio-disk h2{
   color: #091E42;
-  font-size: 40px;
+  font-size: 2.8vw;
 }
 
 .left-section-bio-disk p{
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.1vw;
+  line-height: 1.7vw;
   color: #344563;
 }
 
 .left-section-bio-disk #connect{
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.11vw;
+  line-height: 1.7vw;
   color: #6070FF;
-  padding: 24px 0;
+  padding: 1.7vw 0;
   
 }
 
 /*Resume Button */
 #resume-button-disk {
-  width: 138px;
+  width: 9.2vw;
   display: inline-block;
   text-align: center;
-  padding: 12px;
+  padding: 0.8vw;
   color: #396Df3;
   background-color: white;
   border: 1px solid #396Df3;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.1vw;
+  line-height: 1.7vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 30px 0;
-}
-
-.right-section-bio-disk {
-  width: 684px;
-  position: relative;
-  top: 140px;
-  left: 140px;
+  margin: 2vw 0;
 }
 
 .bio-disk .lang-disk{
-  height: 24px;
-  font-size: 20px;
-  line-height: 24px;
+  height: 1.7vw;
+  font-size: 1.4vw;
+  line-height: 1.7vw;
   color: #344563;
-  gap: 24px;
+  gap: 1.7vw;
   width: 27vw;
   display: inline-block;
-  padding: 24px;
+  padding: 1.7vw;
 }
  .disk{
-  width: 70%;
+  width: 32.5vw;
  }
 .angel-disk{
+  font-size: 1.1vw;
   color: #ACB7C3;
   border: 2px;
   gap: 24px;
@@ -782,8 +777,8 @@ form button:hover {
 }
 
 .skill-item-disk {
-  height: 120px;
-  width: 122px;
+  height: 8vw;
+  width: 8vw;
   padding: 8px;
   background-color: #F7F7F9;
   border-radius: 8px;
@@ -795,20 +790,18 @@ form button:hover {
   background-color: #f0f0f0;
 }
 
-.skill-icon-disk {
-  width: 48px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .skill-icon-disk img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 50%;
   border: 1px solid white;
-  margin: 18px;
+  margin-bottom: 0.1vw;
+}
+
+.skill-item-disk .web-lang {
+  color: #253858;
+  font-size: 1.2vw;
 }
 
 .skill-section-disk:last-child {
@@ -870,7 +863,6 @@ form button:hover {
   padding: 10px; 
   margin-bottom: 15px; 
   border: 1px solid #CFD8DC; 
-  border-radius: 8px; 
   width: 447px; 
   font-size: 17px; 
   line-height: 20px; 
@@ -919,86 +911,76 @@ form button:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .project-Container-disk {
-    padding: 72px;
-    gap: 72px;
+  .social-links-disk {
+    font-size: 1.6vw;
   }
-
-  .project-1-disk {
-    flex-direction: column;
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .left-container-disk,
-  .right-container-disk {
-    padding: 16px;
-  }
-
-  .first-h1-disk,
-  .second-h1-disk {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .company-name-disk,
-  .role-disk,
-  .year-disk {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .bio-disk {
-    flex-direction: column;
-    height: auto;
-    padding: 100px;
-  }
-
-  .bio-disk .lang-disk{
-    width: 40vw;
-  }
-
-  .hand-cursor{
-    display: none;
-  }
-
-  .left-section-bio-disk {
-    width: auto;
-    left: 0;
-    top: 0;
-    padding: 16px;
-  }
-
-  .right-section-bio-disk {
-    width: auto;
-    left: 0;
-    top: 0;
-    padding: 16px;
-  }
-
-  .skill-item-disk {
-    width: 100px;
-    height: 100px;
-  }
-
-  .contact-container-body-disk {
-    padding: 16px;
-  }
-
-  .contact-description-disk {
-    width: 100%;
-    padding: 16px;
-    font-size: 18px;
+  .headline-section-disk h2 {
+    font-size: 38px;
+    line-height: 52px;
+   }
+  
+   .headline-section-disk p {
+    font-size: 17px;
     line-height: 24px;
+   }
+  
+   .headline-section-disk h3 {
+    font-size: 13px;
+    line-height: 18px;
+   }
+
+   .left-section-bio-disk h2{
+    color: #091E42;
+    font-size: 3vw;
+  }
+  
+  .left-section-bio-disk p{
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+    color: #344563;
+  }
+  
+  .left-section-bio-disk #connect{
+    font-size: 1.3vw;
+    line-height: 1.9vw;
+    color: #6070FF;
+    padding: 1.9vw 0;
+    
+  }
+  
+  /*Resume Button */
+  #resume-button-disk {
+    width: 11vw;
+    padding: 0.99vw;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    line-height: 1.9vw;
+    margin: 2.2vw 0;
   }
 
-  .form-disk input,
-  .form-disk textarea {
-    margin-bottom: 12px;
+  #resume-button-disk-last {
+    width: 11vw;
+    padding: 0.99vw;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    line-height: 1.9vw;
+    margin: 2.2vw 0;
   }
+  
+  .bio-disk .lang-disk{
+    height: 1.9vw;
+    font-size: 1.6vw;
+    line-height: 1.9vw;
+    color: #344563;
+    gap: 1.9vw;
+    width: 27.3vw;
+    display: inline-block;
+    padding: 1.9vw;
+}
 }
 
-html, body {
+
+html,body {
   width: 100%;
   overflow-x: hidden;
 }
