@@ -84,7 +84,7 @@ header h2{
   line-height: 52px;
   color: #172B4D;
   background-image: url('background.png');
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-color: white;
@@ -977,6 +977,11 @@ form button:hover {
     display: inline-block;
     padding: 1.9vw;
 }
+}
+@media (max-width:424px) {
+  .headline{
+  background-size: contain ;
+  }
 }
 
 
