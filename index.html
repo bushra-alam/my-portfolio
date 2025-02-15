@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio Web</title>
+  <title>Bushra Portfolio Web</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,11 @@
     <h1 class="my-logo-mbl">My Logo</h1>
     <h2 class="my-logo-disk">My Logo</h2>
     <nav>
-      <i class="fa-solid fa-bars"></i>
+      <i onclick = showSidebar() class ="fa-solid fa-bars"></i>
       <div class="nav-disk poppins-mid">
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#portfolio-disk">Portfolio</a>
+        <a href="#about-disk">About</a>
+        <a href="#contact-disk">Contact</a>
       </div>
     </nav>
   </header>
@@ -50,7 +50,7 @@
 
 
      <!-- project-container -->
-    <section class="project-Container">
+    <section class="project-Container" id="portfolio">
 
        <!-- card-1 -->
       <div class="project-1">
@@ -164,7 +164,7 @@
 
      <!-- About Myself -->
 
-    <section class="bio">
+    <section class="bio" id="about">
       <h2 class="poppins-bold">About Myself</h2>
       <p class="poppins-regular">Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
       <h2 class="poppins-mid" id="connect-bio">LET'S CONNECT</h2>
@@ -228,7 +228,7 @@
 
     <!-- Contact-Me -->
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="contact-container">
         <h2 class="poppins-bold contact-me">Contact me</h2>
         <p class="poppins-regular contact-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
@@ -275,7 +275,7 @@
     </section>
 
         <!-- Project Container disk -->
-        <section class="project-Container-disk">
+        <section class="project-Container-disk" id="portfolio-disk">
           <!-- Card 1 -->
           <div class="project-1-disk">
             <div class="right-container-disk">
@@ -396,7 +396,7 @@
 
     <!-- About Myself -->
 
-  <section class="bio-disk">
+  <section class="bio-disk" id="about-disk">
     <div class="left-section-bio-disk">
       <h2 class="poppins-bold">About Myself</h2>
     <p class="poppins-regular">Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -460,7 +460,7 @@
 
   </section>
 
-  <section class="contact-section-disk">
+  <section class="contact-section-disk" id="contact-disk">
     <div class="contact-container-disk">
      <div class="contact-container-body-disk">
       <h2 class="poppins-bold contact-me-disk">Contact me</h2>
@@ -478,8 +478,18 @@
      </div>
     </div>
   </section>
-       
 
+  <div class="sidebar poppins-600" id="sidebar">
+    <a onclick="hideSidebar()" href="#"><i class="fa-solid fa-xmark"></i></a>
+    <ul>
+      <a onclick="hideSidebar()"  href="#portfolio">Portfolio</a>
+      <a onclick="hideSidebar()"  href="#about">About</a>
+      <a onclick="hideSidebar()"  href="#contact">Contact</a>
+    
+    </ul>
+  </div>
+       
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/f871832cba.js" crossorigin="anonymous"></script>
 </body>
 </html>
