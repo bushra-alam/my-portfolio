@@ -33,6 +33,10 @@ body{
   background-color: #f0f2f7;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -917,7 +921,7 @@ form button:hover {
   top: 0;
   right: 0;
   z-index: 999;
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 255, 0.5);
   overflow-x: hidden;
   display: none;
