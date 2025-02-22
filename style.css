@@ -1047,3 +1047,60 @@ html,body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.pop{
+  height: 100%;
+  width: 100%;
+  background-color: #f0f2f7;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  display: none;
+  text-align: center;
+  visibility: hidden;
+}
+
+
+.popup{
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  /* height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  overflow-x: hidden; */
+}
+
+.popup-content #x-mark{
+  /* margin-left: 60px; */
+  font-size: 22px;
+  color: #67798E;
+  /* display: inline-block; */
+}
+
+.popup-content .hrr{
+  width: 295px;
+  height: 1px;
+  margin-bottom: 30px;
+  background-color: #DFE1E6;
+}
+
+
+.popup-button{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.popup-button i{
+  color: #6070FF;
+  /* margin-left: 10px; */
+  font-size: 20px;
+}
+
