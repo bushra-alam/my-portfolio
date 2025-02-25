@@ -31,8 +31,8 @@ const projects = [
         role: "Back End Dev",
         year: "2015",
         image: "card-2.png",
-        description: "A different project with a modern UI and engaging experience.",
-        technologies: ["React", "Node.js"],
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        technologies: ["HTML", "CSS" , "JavaScript"],
         liveLink: "#",
         sourceLink: "#"
     },
@@ -43,8 +43,8 @@ const projects = [
         role: "Back End Dev",
         year: "2015",
         image: "card-3.png",
-        description: "Another exciting project that challenges the boundaries of creativity.",
-        technologies: ["Python", "Django"],
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        technologies: ["HTML", "CSS" , "JavaScript"],
         liveLink: "#",
         sourceLink: "#"
     },
@@ -55,8 +55,8 @@ const projects = [
         role: "Back End Dev",
         year: "2015",
         image: "card-4.png",
-        description: "A fantastic mobile-friendly project.",
-        technologies: ["Vue", "Tailwind"],
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        technologies: ["HTML", "CSS" , "JavaScript"],
         liveLink: "#",
         sourceLink: "https://github.com",
     }
@@ -64,6 +64,7 @@ const projects = [
 
 // Event listener for all buttons
 let btns = document.querySelectorAll(".card-button");
+
 btns.forEach((btn) => {
     btn.addEventListener("click", function (e) {
         e.preventDefault();
@@ -71,6 +72,7 @@ btns.forEach((btn) => {
         popUp(projectId);
     });
 });
+
 
 // Function to show project details
 function popUp(id) {
@@ -110,11 +112,139 @@ function popUp(id) {
         </div>
     `;
 
-    document.querySelector(".popup").style.display = "block";
+    document.querySelector(".mobile-project-popup").style.display = "block";
+    document.documentElement.classList.add("no-scroll");
+
 }
 
-// Function to close popup
 function closePopup() {
-    let popup = document.querySelector(".popup");
-    if (popup) popup.style.display = "none";
+    let popup = document.querySelector(".mobile-project-popup");
+    if (popup) popup.remove(); 
+}
+
+
+// Desk
+const diskProjects = [
+    {
+        id: "disk-project-1",
+        name: "Tonic",
+        company: "CANOPY",
+        role: "Back End Dev",
+        year: "2015",
+        image: "card-1-disk.png",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius. 
+        <br> <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius.`,        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        liveLink: "#",
+        sourceLink: "#"
+    },
+
+    {
+        id: "disk-project-2",
+        name: "Multi-Post Stories",
+        company: "FCAEBOOK",
+        role: "Full Stack Dev",
+        year: "2015",
+        image: "card-2-disk.png",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius. 
+        <br> <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius.`,        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        liveLink: "#",
+        sourceLink: "#"
+    },
+
+    {
+        id: "disk-project-1",
+        name: "Facebook 360",
+        company: "FACEBOOK",
+        role: "Back End Dev",
+        year: "2015",
+        image: "card-3-disk.png",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius. 
+        <br> <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius.`,        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        liveLink: "#",
+        sourceLink: "#"
+    },
+
+    {
+        id: "disk-project-4",
+        name: "Uber Navigation",
+        company: "Uber",
+        role: "Lead Developer",
+        year: "2018",
+        image: "card-4-disk.png",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius. 
+        <br> <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam illo quia vero fugiat atque iste error veritatis repudiandae, fuga beatae nulla, quidem quo consectetur nam amet, dolor consequatur repellendus! Eius.`,
+        technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstap"],
+        liveLink: "#",
+        sourceLink: "#"
+    },
+]
+
+
+const btnsDesk = document.querySelectorAll(".card-btn-disk")
+btnsDesk.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const projectId = btn.id; // Get the ID of the clicked button
+        popUpDisk(projectId);
+    });
+});
+
+function popUpDisk(id){
+    console.log(id)
+    let selectedProject = diskProjects.find(project => project.id === id);
+    
+    if (!selectedProject) {
+        console.error("Project not found!");
+        return;
+    }
+    let projectPopUp = document.createElement("div");
+    projectPopUp.classList.add("disk-project-popup");
+    document.body.appendChild(projectPopUp)
+    projectPopUp.innerHTML = `
+        <div class="popup">
+            <div class="popup-content">
+                <a onclick="closePopup()" href="#"><i class="fa-solid fa-xmark" id="x-mark-disk"></i></a>
+                <h2 class="poppins-bold first-h1">${selectedProject.name}</h2>
+                <div class="card-meta">
+                   <div class="container">
+                      <span class="poppins-600 company-name">${selectedProject.company}</span>
+                      <span class="dot"></span>
+                      <span class="poppins-600 role">${selectedProject.role}</span>
+                      <span class="dot"></span>
+                      <span class="poppins-600 year">${selectedProject.year}</span>
+                   </div>
+                 </div>
+                <img src="${selectedProject.image}" alt="${selectedProject.name}" class="popup-image-disk">
+                <div class= "container-body">
+                    <div class= "description-disk">
+                         <p class="poppins-regular paraa">${selectedProject.description}</p>
+
+                    </div>
+                    <div class= "description-disk-2">
+                         <div class="poppins-mid card-tags">${selectedProject.technologies.map(tech => `<span class= "tag">${tech}</span>`).join('')}</div>
+                         <div class="hrr"></div>
+                         <div class="popup-button">
+                             <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank" class="popup-button">See Live () </a>
+                             <a href="${selectedProject.sourceLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Source Code <i class="fa-brands fa-github"></i></a>
+                         </div>
+                    </div>
+
+                </div>
+                  
+            </div>
+        </div>
+    `;
+    document.querySelector(".disk-project-popup").style.display = "block";
+    document.documentElement.classList.add("no-scroll");
+}
+function closePopup() {
+    let popup = document.querySelector(".disk-project-popup");
+    if (popup) popup.remove(); 
 }
