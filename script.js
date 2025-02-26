@@ -77,11 +77,6 @@ btns.forEach((btn) => {
 // Function to show project details
 function popUp(id) {
     let selectedProject = projects.find(project => project.id === id);
-    
-    if (!selectedProject) {
-        console.error("Project not found!");
-        return;
-    }
 
     let projectPopUp = document.createElement("div");
     projectPopUp.classList.add("mobile-project-popup");
@@ -159,7 +154,7 @@ const diskProjects = [
     },
 
     {
-        id: "disk-project-1",
+        id: "disk-project-3",
         name: "Facebook 360",
         company: "FACEBOOK",
         role: "Back End Dev",
@@ -202,11 +197,7 @@ btnsDesk.forEach((btn) => {
 function popUpDisk(id){
     console.log(id)
     let selectedProject = diskProjects.find(project => project.id === id);
-    
-    if (!selectedProject) {
-        console.error("Project not found!");
-        return;
-    }
+
     let projectPopUp = document.createElement("div");
     projectPopUp.classList.add("disk-project-popup");
     document.body.appendChild(projectPopUp)
@@ -214,7 +205,7 @@ function popUpDisk(id){
         <div class="popup">
             <div class="popup-content">
                 <a onclick="hidePopup(event)" href="#"><i class="fa-solid fa-xmark" id="x-mark-disk"></i></a>
-                <h2 class="poppins-bold first-h1-disk">${selectedProject.name}</h2>
+                <h2 class="poppins-bold first-h1-disk ">${selectedProject.name}</h2>
                 <div class="card-meta">
                    <div class="container-disk">
                       <span class="poppins-600 company-name-disk">${selectedProject.company}</span>
