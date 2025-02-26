@@ -89,7 +89,7 @@ function popUp(id) {
     projectPopUp.innerHTML = `
         <div class="popup">
             <div class="popup-content">
-                <a onclick="closePopup()" href="#"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
+                <a onclick="closePopup(event)" href="#"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
                 <h2 class="poppins-bold first-h1">${selectedProject.name}</h2>
                 <div class="card-meta">
                    <div class="container">
@@ -104,7 +104,8 @@ function popUp(id) {
                 <p class="poppins-regular para">${selectedProject.description}</p>
                 <div class="poppins-mid card-tags">${selectedProject.technologies.map(tech => `<span class= "tag">${tech}</span>`).join('')}</div>
                 <div class="hrr"></div>
-                <div class="popup-button">
+                <div class="\
+                ">
                   <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
                   <a href="${selectedProject.sourceLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Source Code <i class="fa-brands fa-github"></i></a>
                 </div>
@@ -118,6 +119,7 @@ function popUp(id) {
 }
 
 function closePopup() {
+    event.preventDefault();
     let popup = document.querySelector(".mobile-project-popup");
     if (popup) popup.remove();
     document.documentElement.classList.remove("no-scroll"); 
@@ -211,7 +213,7 @@ function popUpDisk(id){
     projectPopUp.innerHTML = `
         <div class="popup">
             <div class="popup-content">
-                <a onclick="hidePopup()" href="#"><i class="fa-solid fa-xmark" id="x-mark-disk"></i></a>
+                <a onclick="hidePopup(event)" href="#"><i class="fa-solid fa-xmark" id="x-mark-disk"></i></a>
                 <h2 class="poppins-bold first-h1-disk">${selectedProject.name}</h2>
                 <div class="card-meta">
                    <div class="container-disk">
@@ -246,6 +248,7 @@ function popUpDisk(id){
     document.documentElement.classList.add("no-scroll");
 }
 function hidePopup() {
+    event.preventDefault();
     let popup = document.querySelector(".disk-project-popup");
     if (popup) popup.remove(); 
     document.documentElement.classList.remove("no-scroll");
