@@ -195,7 +195,6 @@ btnsDesk.forEach((btn) => {
 });
 
 function popUpDisk(id){
-    console.log(id)
     let selectedProject = diskProjects.find(project => project.id === id);
 
     let projectPopUp = document.createElement("div");
