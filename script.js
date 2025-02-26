@@ -10,7 +10,7 @@ function hideSidebar() {
     document.documentElement.classList.remove("no-scroll");
 }
 
-// Updated projects array with unique IDs and added technologies
+
 const projects = [
     {
         id: "mobile-project-1",
@@ -68,7 +68,7 @@ let btns = document.querySelectorAll(".card-button");
 btns.forEach((btn) => {
     btn.addEventListener("click", function (e) {
         e.preventDefault();
-        const projectId = btn.id; // Get the ID of the clicked button
+        const projectId = btn.id;
         popUp(projectId);
     });
 });
@@ -105,7 +105,7 @@ function popUp(id) {
                 <div class="poppins-mid card-tags">${selectedProject.technologies.map(tech => `<span class= "tag">${tech}</span>`).join('')}</div>
                 <div class="hrr"></div>
                 <div class="popup-button">
-                  <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Live Demo () </a>
+                  <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
                   <a href="${selectedProject.sourceLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Source Code <i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
@@ -119,7 +119,8 @@ function popUp(id) {
 
 function closePopup() {
     let popup = document.querySelector(".mobile-project-popup");
-    if (popup) popup.remove(); 
+    if (popup) popup.remove();
+    document.documentElement.classList.remove("no-scroll"); 
 }
 
 
@@ -191,7 +192,7 @@ const btnsDesk = document.querySelectorAll(".card-btn-disk")
 btnsDesk.forEach((btn) => {
     btn.addEventListener("click", function (e) {
         e.preventDefault();
-        const projectId = btn.id; // Get the ID of the clicked button
+        const projectId = btn.id; 
         popUpDisk(projectId);
     });
 });
@@ -210,15 +211,15 @@ function popUpDisk(id){
     projectPopUp.innerHTML = `
         <div class="popup">
             <div class="popup-content">
-                <a onclick="closePopup()" href="#"><i class="fa-solid fa-xmark" id="x-mark-disk"></i></a>
-                <h2 class="poppins-bold first-h1">${selectedProject.name}</h2>
+                <a onclick="hidePopup()" href="#"><i class="fa-solid fa-xmark" id="x-mark-disk"></i></a>
+                <h2 class="poppins-bold first-h1-disk">${selectedProject.name}</h2>
                 <div class="card-meta">
-                   <div class="container">
-                      <span class="poppins-600 company-name">${selectedProject.company}</span>
+                   <div class="container-disk">
+                      <span class="poppins-600 company-name-disk">${selectedProject.company}</span>
                       <span class="dot"></span>
-                      <span class="poppins-600 role">${selectedProject.role}</span>
+                      <span class="poppins-600 role-disk">${selectedProject.role}</span>
                       <span class="dot"></span>
-                      <span class="poppins-600 year">${selectedProject.year}</span>
+                      <span class="poppins-600 year-disk">${selectedProject.year}</span>
                    </div>
                  </div>
                 <img src="${selectedProject.image}" alt="${selectedProject.name}" class="popup-image-disk">
@@ -228,11 +229,11 @@ function popUpDisk(id){
 
                     </div>
                     <div class= "description-disk-2">
-                         <div class="poppins-mid card-tags">${selectedProject.technologies.map(tech => `<span class= "tag">${tech}</span>`).join('')}</div>
+                         <div class="poppins-mid card-tags-disk">${selectedProject.technologies.map(tech => `<span class= "tag-disk">${tech}</span>`).join('')}</div>
                          <div class="hrr"></div>
-                         <div class="popup-button">
-                             <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank" class="popup-button">See Live () </a>
-                             <a href="${selectedProject.sourceLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Source Code <i class="fa-brands fa-github"></i></a>
+                         <div class="popup-button-disk">
+                             <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                             <a href="${selectedProject.sourceLink}" class="poppins-mid card-button" target="_blank" >Source Code <i class="fa-brands fa-github"></i></a>
                          </div>
                     </div>
 
@@ -244,7 +245,8 @@ function popUpDisk(id){
     document.querySelector(".disk-project-popup").style.display = "block";
     document.documentElement.classList.add("no-scroll");
 }
-function closePopup() {
+function hidePopup() {
     let popup = document.querySelector(".disk-project-popup");
     if (popup) popup.remove(); 
+    document.documentElement.classList.remove("no-scroll");
 }
