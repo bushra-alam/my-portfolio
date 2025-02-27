@@ -1158,16 +1158,10 @@ html,body {
 
 
 
-.button-container-form {
-  display: flex; 
-  align-items: center; 
-  gap: 10px; 
-}
-
 .error-msg {
-  color: #172B4D; 
+  margin-top: 15px;
+  color: rgb(134, 4, 4); 
   font-size: 14px; 
-  margin: 0; 
   white-space: nowrap; 
   text-align: center;
 }

@@ -243,20 +243,30 @@ function hidePopup() {
     document.documentElement.classList.remove("no-scroll");
 }
 
+// form submission
 
-// Email correction
 document.querySelectorAll(".form-sub").forEach(form => {
     form.addEventListener("submit", async function (e) {
         e.preventDefault();
+        
+        let errorMsg = form.querySelector(".error-msg");
+        if (!errorMsg) {
+            errorMsg = document.createElement("p");
+            errorMsg.classList.add("poppins-mid", "error-msg");
+            const buttonContainer = form.querySelector(".button-container-form");
+            if (buttonContainer) {
+                buttonContainer.appendChild(errorMsg);
+            }
+        }
+
         const emailInput = form.querySelector(".email");
-        const errorMsg = form.querySelector(".error-msg");
         const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 
         if (!emailRegex.test(emailInput.value)) {
             errorMsg.innerHTML = `Invalid email: <br> Use only lowercase letters`;
-            return;
+            return; 
         } else {
-            errorMsg.innerHTML = "";
+            errorMsg.innerHTML = ""; 
         }
 
         const formData = new FormData(form);
@@ -271,6 +281,7 @@ document.querySelectorAll(".form-sub").forEach(form => {
             if (response.ok) {
                 alert("Message sent successfully!");
                 form.reset();
+                errorMsg.innerHTML = ""; 
             } else {
                 alert("Oops! Something went wrong. Please try again.");
             }
