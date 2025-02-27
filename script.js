@@ -99,8 +99,7 @@ function popUp(id) {
                 <p class="poppins-regular para">${selectedProject.description}</p>
                 <div class="poppins-mid card-tags">${selectedProject.technologies.map(tech => `<span class= "tag">${tech}</span>`).join('')}</div>
                 <div class="hrr"></div>
-                <div class="\
-                ">
+                <div class="popup-button">
                   <a href="${selectedProject.liveLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
                   <a href="${selectedProject.sourceLink}" class="poppins-mid card-button" target="_blank" class="popup-button">Source Code <i class="fa-brands fa-github"></i></a>
                 </div>
@@ -141,7 +140,7 @@ const diskProjects = [
     {
         id: "disk-project-2",
         name: "Multi-Post Stories",
-        company: "FCAEBOOK",
+        company: "FACEBOOK",
         role: "Full Stack Dev",
         year: "2015",
         image: "card-2-disk.png",
@@ -243,3 +242,40 @@ function hidePopup() {
     if (popup) popup.remove(); 
     document.documentElement.classList.remove("no-scroll");
 }
+
+
+// Email correction
+document.querySelectorAll(".form-sub").forEach(form => {
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const emailInput = form.querySelector(".email");
+        const errorMsg = form.querySelector(".error-msg");
+        const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+        if (!emailRegex.test(emailInput.value)) {
+            errorMsg.innerHTML = `Invalid email: <br> Use only lowercase letters`;
+            return;
+        } else {
+            errorMsg.innerHTML = "";
+        }
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset();
+            } else {
+                alert("Oops! Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            alert("Error submitting the form. Check your internet connection.");
+        }
+    });
+});

@@ -1155,3 +1155,19 @@ html,body {
   padding: 1.0vw;
   text-decoration: none;
 }
+
+
+
+.button-container-form {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.error-msg {
+  color: #172B4D; 
+  font-size: 14px; 
+  margin: 0; 
+  white-space: nowrap; 
+  text-align: center;
+}
