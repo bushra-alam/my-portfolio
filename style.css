@@ -1155,3 +1155,13 @@ html,body {
   padding: 1.0vw;
   text-decoration: none;
 }
+
+
+
+.error-msg {
+  margin-top: 15px;
+  color: rgb(134, 4, 4); 
+  font-size: 14px; 
+  white-space: nowrap; 
+  text-align: center;
+}
